@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -19,10 +21,10 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               SizedBox(
-                height: 300.0,
-                width: 600.0,
+                height: 200.0,
+                width: 200.0,
                 
-                child: Image.asset("assets/profile.jpeg", fit: BoxFit.fitHeight,),
+                child: SvgPicture.asset("assets/crown.svg",color: Colors.red,),
               ),
 
               SizedBox(
